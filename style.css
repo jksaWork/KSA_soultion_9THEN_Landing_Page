@@ -1,0 +1,624 @@
+.statistics-widget-1 p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--theme-title-color);
+    margin: 20px 0 6px 0;
+    text-transform: capitalize;
+    font-family: 'Almarai', sans-serif;
+}
+
+.feature-card-widget p, .feature-card-widget-2 p, .feature-card-widget-4 p, .feature-card-widget-5 p, .feature-card-widget-6 p, .feature-card-widget-7 p{
+      font-family: 'Almarai', sans-serif;
+}
+.track-f-progress .text-content p, .card-payment .text-content p, .internet-banking .text-content p {
+          font-family: 'Almarai', sans-serif;
+}
+
+.track-f-progress .text-content {
+    position: relative;
+    z-index: 1;
+    font-family: 'Almarai', sans-serif;
+}
+
+.about li {
+        list-style-type: disc;
+        line-height: 2.4;
+}
+
+
+.pagination-widget ul li a.active {
+    background-color: #017180;
+    color: #fff;
+}
+
+
+
+
+element.style {
+}
+.pagination-widget ul li a {
+
+    border: 1px solid #017180;
+          font-family: 'Almarai', sans-serif; 
+    color: #017180;
+}
+
+
+.client-area .client-slider .slick-list {
+    margin: 0 -25px;
+    padding: 0 10px;
+    direction: ltr;
+    text-align: right;
+}
+
+.loan-slider .single-slide p {
+     font-family: 'Almarai', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 0;
+    color: var(--theme-text-color);
+}
+.about-area-3 p {
+  font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--theme-text-color);
+    max-width: 370px;
+    margin-bottom: 0;
+}
+.about-area-3 h5 .round-dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 8.5px solid #5facae;
+}
+.client-area .client-slider .single-client .quote {
+    font-size: 17px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5d5d66;
+    margin: 25px 0 39px 0;
+    position: relative;
+}
+.feature-card-widget-9 p {
+
+ font-family: 'Almarai', sans-serif;
+}
+.feature-card-widget-9.widget-link a {
+    color: #fff;
+    font-family: 'Almarai', sans-serif;
+}
+
+.get-touch-area-2 p {
+     font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #eeeeee;
+    margin-bottom: 0;
+}
+.footer.footer-2 {
+        background-color: #017180
+}
+.client-area .client-slider .single-client .client-info {
+   display: block; 
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+
+      font-family: 'Almarai', sans-serif;
+}
+
+
+.client-area .client-slider .single-client .client-info p {
+    font-size: 17px;
+      font-family: 'Almarai', sans-serif;
+    font-weight: 500;
+    color: #171717;
+    text-transform: capitalize;
+    line-height: 28px;
+}
+
+
+.client-area .client-slider .single-client .client-info .role {
+    display: inline-block;
+    font-size: 12px;
+    color: #848d95;
+     font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 19px;
+}
+
+.news-area .news-slider .slick-list {
+    margin: 0 -25px;
+    padding: 0 10px;
+    direction: ltr;
+}
+.news-area .news-slider .blog-widget-1 {
+    margin: 25px 15px 50px 15px;
+         font-family: 'Almarai', sans-serif;
+
+    text-align: right;
+}
+.header-menu .menu > .nav-item > .nav-link {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Almarai', sans-serif;
+}
+.footer .copyright .copyright-text p {
+    font-size: 16px;
+ font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    color: #9199a1;
+    font-family: 'Almarai', sans-serif;
+}
+
+.footer .footer-top .footer-widget .footer-link ul li a {
+    font-size: 16px;
+        font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    color: #d8dce0;
+    border-bottom: 1px solid transparent;
+    line-height: 40px;
+}
+.footer .footer-top .footer-text {
+    color: #fff;
+    font-size: 16px;
+ font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Almarai', sans-serif;
+}
+
+.blog-widget-1 .blog-content P{
+    
+             font-family: 'Almarai', sans-serif;
+
+}
+
+.banner-area-6 .banner-content p {
+    font-size: 18px;
+ font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    color: #414e5b;
+    line-height: 30px;
+    max-width: 350px;
+}
+
+element.style {
+}
+.banner-area-6 {
+ 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 207px;
+    padding-bottom: 135px;
+    direction: ltr;
+    text-align: center;
+}
+
+
+
+.single-fact {
+    display: flex;
+}
+.banner-fact .single-fact .icon {
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--primary-color);
+    float: left;
+    margin-right: 0;
+    margin-left: 19px;
+}
+
+.about-area-2 {
+    overflow: hidden;
+    padding-top: 70px;
+    direction: ltr;
+    text-align: right;
+}
+.loan-slider .slick-list {
+    padding-top: 65px;
+    padding-bottom: 60px;
+    margin: 0 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    direction: ltr;
+}
+.about-area-2 p {
+ font-family: 'Almarai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6a737c;
+}
+.about-area-2 .feature-list li {
+  font-family: 'Almarai', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #6a737c;
+    margin-bottom: 10px;
+}
+.read-more-btn {
+    font-size: 18px;
+ font-family: 'Almarai', sans-serif;
+}
+.calculator-widget-2 .single-calculator-widget .loan-type-select button.active {
+    box-shadow: 0px 8px 20px 0px #0050b24d;
+    background-color: #017180;
+    border-color: #017180;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Almarai', sans-serif;
+}
+.thowrow {
+    direction: rtl;
+}
+.about-area-2 .feature-list li i {
+    font-size: 17px;
+    color: var(--primary-color);
+    margin-left:14px; 
+    vertical-align: middle;
+}
+
+.loan-slider .slick-arrow {
+  
+    display: none !important;
+}
+
+
+.banner-fact .single-fact .icon {
+
+    background-color: transparent
+}
+
+.banner-fact .single-fact .icon {
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+    border-radius: 50%;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+.calculator-widget-2 .loan-calculation li{
+        font-family: 'Almarai', sans-serif;
+}
+.stepper-widget ul li.active a{
+        font-family: 'Almarai', sans-serif;
+}
+.stepper-widget ul li.active a .number {
+    background-color: #017180;
+}
+.footer.footer-2 .footer-top .f-widget-title h5 {
+   font-family: 'Almarai', sans-serif;
+}
+
+.theme-btn.theme-btn-primary_alt:hover {
+    background-color: #017180;
+    color: #fff;
+}
+.stepper-widget ul li a{
+       font-family: 'Almarai', sans-serif;
+}
+.loan-details-widget .nav-btn a, .loan-details-widget .nav-btn button{
+     font-family: 'Almarai', sans-serif;
+}
+
+.single-security-widget .security-content-2 p {
+  
+    font-weight: normal;
+}
+.footer {
+    background-position: center;
+    background-size: cover;
+    background-color: #017180f7;
+}
+
+.banner-area {
+    background-color: #0b698a;
+}
+
+.white {
+    background: #FFF;
+}
+
+.white .nav-link {
+    font-size: 16px;
+    color: #017180;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Almarai', sans-serif;
+}
+.navcolor .nav-link {
+    font-size: 16px;
+    color: #017180;}
+.theme-btn-2::before {
+     background-color: #017180;
+}
+
+.cta.cta-2 {
+    padding: 80px 70px;
+    background-color: #017180;
+}
+
+.theme-btn-2 {
+   
+    font-family: 'Almarai', sans-serif;
+   
+    color: #017180;
+}
+
+
+.client-area .client-slider .single-client .quote::after{
+        color: #017180;
+}
+
+.blog-widget-1 .blog-content .read-more {
+  
+    font-family: 'Almarai', sans-serif;
+      color: #017180;
+
+}
+
+.banner-area-6 .banner-content p {
+
+    max-width: 100%;
+    text-align: right;
+}
+.banner-area-6 .banner-content h1 {
+    line-height: 88px;
+    font-size: 70px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 600;
+    color: #010201;
+    margin-bottom: 35px;
+    text-align: right;
+}
+.get-touch-area-2 .touch-form .form-control {
+    border-radius: 4px;
+    background-color: #f2f0ef;
+    border-color: #f2f0ef;
+    height: 56px;
+      font-family: 'Almarai', sans-serif;
+    line-height: 56px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    text-align: right;}
+}
+.theme-btn {
+     font-family: 'Almarai', sans-serif;
+}
+.blog-widget-2 .blog-content p {
+     font-family: 'Almarai', sans-serif;
+}
+.blog-sidebar-widget .widget-catagory ul li a{
+      font-family: 'Almarai', sans-serif;
+}
+.form-check .form-check-label{
+    font-family: 'Almarai', sans-serif;
+}
+.contact-form-widget .form-control {
+    font-family: 'Almarai', sans-serif;
+}
+.loan-details-widget .doc-info p{
+        font-family: 'Almarai', sans-serif;
+}
+.job-description-widget .single-description-para p{
+     font-family: 'Almarai', sans-serif;
+}
+.theme-btn{
+      font-family: 'Almarai', sans-serif;
+}
+.banner-area-6 {
+    background-color: #ffffff;
+}
+.about-area-2 .sms-flow::after {
+    background: none !important;
+}
+.about-area-2 .sms-flow::before {
+    background: none;
+}
+
+.login-rempmber {
+    text-align: left;
+}
+
+
+.overflow {
+    overflow-y: scroll;
+    height: 619px;
+}
+.loan-details-widget .label{
+    text-align: right;
+}
+
+
+.theme-btn {
+   
+    background-color: #017180;
+}
+
+
+.banner-area-6 .banner-img .img-2 {
+    position: absolute;
+    box-shadow: none;
+}
+.banner-area-6 .banner-img .img-1 {
+    box-shadow: none;
+    border-radius: 8px;
+        width: 100%;
+    margin-right: -58px;
+}
+
+
+.banner-area-6 .banner-img::before {
+
+    bottom: -50px;
+}
+
+
+.bg_primary {
+    background-color: #017180 !important;
+}
+
+
+
+
+@media (max-width: 767px){
+   .banner-area-6 .banner-content h1 {
+    line-height: 81px;
+    font-size: 33px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 600;
+    color: #010201;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+    .banner-area-6 .banner-img .img-1 {
+    box-shadow: none;
+    border-radius: 8px;
+    width: 71%;
+    margin-right: 0;
+}
+    .banner-area-6 .banner-img .img-2 {
+    left: 0;
+    width: 50%;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 1px solid #017180;
+    border-radius: 0.25rem;
+margin-left: 5px !important;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 9px;
+  
+}
+    
+    .nav-pills .nav-link {
+      background: 0 0;
+    border: 1px solid #017180;
+    border-radius: 0.25rem;
+    margin-left: 27px;
+    color: #017180;
+}
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #017180;
+    font-family: 'Almarai', sans-serif;
+}
+}
+.nav-pills .nav-link {
+      background: 0 0;
+    border: 1px solid #017180;
+    border-radius: 0.25rem;
+    margin-left: 27px;
+    color: #017180;
+}
+    .card {
+
+    border: none;
+    }
+  .card {
+   
+    border: none !important;
+    }
+    
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #017180;
+        font-family: 'Almarai', sans-serif;
+}
+
+
+.font-bold {
+    font-weight: bold;
+    font-family: 'Almarai', sans-serif;
+}
+span{
+   
+    font-family: 'Almarai', sans-serif;
+}
+
+.about-area-2 .customer-num > div span{
+     font-family: 'Almarai', sans-serif;
+}
+
+.calculator-widget-2 .single-calculator-widget {
+    padding: 40px 0;
+}
+
+.footer .copyright .copyright-text p {
+   
+    font-family: 'Almarai', sans-serif;
+
+    color: #ffffff;
+}
+.faq-widget .faq-body p{
+     font-family: 'Almarai', sans-serif;
+}
+
+#preloader .round_spinner {
+    border-width: 1px;
+    border-color: snow;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: none;
+    width: 248px;
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 40px auto 80px;
+}
+.loan-slider .slick-dots li.slick-active button {
+    background-color: #69abb4;
+}
+.loan-slider .slick-dots li button {
+     background-color: #69abb4;
+  
+}
+.loan-slider .slick-dots li button::after {
+  
+    border: 1px solid #017180;
+}
+
+@media (max-width: 767px){
+.banner-area-6 {
+    padding-top: 69px;
+    padding-bottom: 135px;
+    }
+.navbar .navbar-brand img {
+
+}
+    
+
+
+}
+
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    display: contents  !important;
+    flex-basis: auto;
+    }}

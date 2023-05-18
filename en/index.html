@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>9then</title>
+    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon" />
+
+    <!-- CSS here -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/bootstrap.rtl.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/elegant-icons.min.css"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/slick-theme.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/nice-select.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/nouislider.min.css"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/jquery.fancybox.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/flatpickr.min.css"
+      media="all"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/responsive.css"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/rtl.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="style-en.css" media="all" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+      input[type="range"] {
+        -webkit-appearance: none;
+
+        -moz-appearance: none;
+        width: 300px;
+        height: 5px;
+        padding: 0;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        direction: ltr;
+      }
+
+      /*Chrome thumb*/
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -webkit-border-radius: 5px;
+        /*16x16px adjusted to be same as 14x14px on moz*/
+        height: 16px;
+        width: 16px;
+        border-radius: 5px;
+        background: #e7e7e7;
+        border: 1px solid #c5c5c5;
+      }
+
+      /*Mozilla thumb*/
+
+      input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -moz-border-radius: 5px;
+        height: 14px;
+        width: 14px;
+        border-radius: 5px;
+        background: #e7e7e7;
+        border: 1px solid #c5c5c5;
+      }
+
+      /*IE & Edge input*/
+
+      input[type="range"]::-ms-track {
+        width: 300px;
+        height: 6px;
+        /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+        background: transparent;
+        /*leave room for the larger thumb to overflow with a transparent border */
+        border-color: transparent;
+        border-width: 2px 0;
+        /*remove default tick marks*/
+        color: transparent;
+      }
+
+      /*IE & Edge thumb*/
+
+      input[type="range"]::-ms-thumb {
+        height: 14px;
+        width: 14px;
+        border-radius: 5px;
+        background: #e7e7e7;
+        border: 1px solid #c5c5c5;
+      }
+
+      /*IE & Edge left side*/
+
+      input[type="range"]::-ms-fill-lower {
+        background: #919e4b;
+        border-radius: 2px;
+      }
+
+      /*IE & Edge right side*/
+
+      input[type="range"]::-ms-fill-upper {
+        background: #c5c5c5;
+        border-radius: 2px;
+      }
+
+      /*IE disable tooltip*/
+
+      input[type="range"]::-ms-tooltip {
+        display: none;
+      }
+
+      input[type="text"] {
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader --
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/logo/loding.png"  alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-menu header-menu-2" id="sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="img/logo/llllll.png"
+                width="50"
+                srcset="img/logo/llllll.png"
+                width="50"
+                alt="logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="menu_toggle">
+                <span class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <span class="hamburger-cross">
+                  <span></span>
+                  <span></span>
+                </span>
+              </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav menu">
+                <li class="nav-item dropdown submenu">
+                  <a
+                    href="index.html"
+                    class="nav-link dropdown-toggle active"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown submenu">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="start-isrsmar.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    How do I make my investment?
+                  </a>
+                </li>
+                <li class="nav-item dropdown submenu">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="about-us.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    about us
+                  </a>
+                </li>
+
+                <li class="nav-item dropdown submenu">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="privacy.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <!-- Knowledge Center -->
+                    privacy policy
+                  </a>
+                </li>
+                <li class="nav-item dropdown submenu">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="privacy.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <!-- Knowledge Center -->
+                    Usage policy
+                  </a>
+                </li>
+              </ul>
+
+              <a class="" href="../index.html">
+                <!-- <img src="img/f  lgar.webp" width="20" /> -->
+                <img src="../img/arabic.png" width="50" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header end-->
+
+    <main>
+      <!-- banner section -->
+      <section class="banner-area-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div
+                class="banner-content wow h4 fadeInRight"
+                data-wow-delay="0.2s"
+              >
+                <h1>
+                  We pride ourselves on innovative investment products and high
+                  quality solutions
+                </h1>
+                <p>
+                  We invest in many vital sectors (energy - clean energy -
+                  petroleum - banks - the investment port
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 text-center text-lg-start">
+              <div class="banner-img">
+                <img
+                  class="img-1 wow fadeInRight"
+                  data-wow-delay="0.8s"
+                  src="img/120.png"
+                  alt=""
+                />
+                <img
+                  class="img-2 wow fadeInRight"
+                  data-wow-delay="1.1s"
+                  src="img/91.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end-->
+
+      <div class="banner-fact">
+        <div class="container">
+          <div class="row gy-lg-0 gy-4">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInRight"
+              data-wow-delay="0.1s"
+            >
+              <div class="single-fact">
+                <div class="icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <p>
+                  Deep experience gives us the basis for reliable intellectual
+                  capital.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInRight"
+              data-wow-delay="0.4s"
+            >
+              <div class="single-fact">
+                <div class="icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <p>
+                  Within our strong advisory base is our ability to meet our
+                  commitments
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInRight mx-auto"
+              data-wow-delay="0.7s"
+            >
+              <div class="single-fact">
+                <div class="icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <p>
+                  We focus on attracting talented people and creating an
+                  atmosphere that rewards independent initiative
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- feature section -->
+
+      <section class="about-area-2 mb-4 bg-white">
+        <div class="container">
+          <div class="row align-items-center" style="margin-bottom: 47px">
+            <div class="col-lg-6 wow fadeInLeft">
+              <div class="text-start thowrow">
+                <h1 class="mb-3">ABOUT US</h1>
+                <p>
+                  We pride ourselves on innovative investment products, high
+                  quality solutions and senior experts with a proven track
+                  record
+                </p>
+                <ul class="list-unstyled feature-list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>Our products are designed
+                    with one main goal, To preserve and develop the investor's
+                    capital and provide security for institutions and
+                    individuals investors.
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> We push the boundaries
+                    of traditional investment and provide the best customized
+                    solutions for our investors.
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>We focus on attracting
+                    talented people and creating an atmosphere that rewards
+                    independent initiative Thinking and integrity
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    Our strong advisory base ensures that we can deliver on our
+                    commitments
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Our employees: The deep
+                    experience of the nine-tenths team gives us the foundation
+                    of reliable intellectual capital
+                  </li>
+                </ul>
+                <a href="about-us.html" class="read-more-btn">
+                  <span>قراءة المزيد</span>
+                  <i class="arrow_left"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight">
+              <div class="sms-flow">
+                <img
+                  class="arrow-1"
+                  src="img/home-5/about-arrow-1.png"
+                  alt=""
+                />
+                <img
+                  class="arrow-2"
+                  src="img/home-5/about-arrow-2.png"
+                  alt=""
+                />
+                <img
+                  class="msg-1 wow fadeInUp"
+                  data-wow-delay="0.1s"
+                  src="img/home-5/msg-1.png"
+                  alt=""
+                />
+                <img class="msg-2" src="img/home-5/msg-2.png" alt="" />
+                <img
+                  class="msg-3 wow fadeInDown"
+                  data-wow-delay="0.3s"
+                  src="img/home-5/msg-3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center gy-4 mt-4">
+            <div class="col-lg-6 mt-4 text-center order-2 order-lg-1">
+              <div class="img-content">
+                <img
+                  class="card-1 img-fluid wow fadeInLeft"
+                  src="img/90.png"
+                  alt=""
+                  width="79%"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 order-lg-2 order-1 wow fadeInRight">
+              <h1 class="mb-3">What do we offer?</h1>
+              <p>
+                We pride ourselves on the commitment we show to our customers,
+                and generally operate on a win-win model sharing. We make money
+                when our investors make money, and our success depends on your
+                success. The company's objective is to provide enhanced returns
+                and long-term capital preservation. Our corporate values reflect
+                Nine-Tenths has a strong partnership culture, commitment to
+                exceptional performance and toughness integrity. Our investment
+                methodology is based on four main pillars under which we
+                operate. constitute our core values Regulatory and investment
+                strategies drive us forward.
+              </p>
+
+              <div class="customer-num">
+                <div>
+                  <h1>50</h1>
+                  <span>Investors</span>
+                </div>
+                <div>
+                  <h1>1M</h1>
+                  <span>total profits</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator-area-2">
+        <div class="container">
+          <div class="section-title">
+            <h1 class="wow fadeInUp text-white">
+              Calculate your investment outcome today!
+            </h1>
+          </div>
+
+          <div class="calculator-widget-2 mt-50">
+            <div class="row gy-lg-0 gy-3">
+              <div class="calculator-result-widget col-lg-6 pl-lg-35">
+                <div class="wow fadeInUp" data-wow-delay="0.3s">
+                  <h5>
+                    And see the impact of long-term investment and compound
+                    growth on your returns after 10 years
+                  </h5>
+
+                  <div class="col-12 mt-60">
+                    <label class="form-label" for="customRange1">
+                      the amount
+                    </label>
+                    <input
+                      type="range"
+                      value="100000"
+                      min="50000"
+                      max="1000000"
+                      step="1"
+                      id="investedAmount"
+                    />
+
+                    <input type="text" value="0" size="3" />
+                  </div>
+
+                  <div class="col-12 mt-50">
+                    <span class="text-center">
+                      *These forecasts are based on historical performance and
+                      there are no guarantees as to the accuracy of future
+                      forecasts
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div
+                  class="single-calculator-widget wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <div class="card">
+                    <div class="card-body">
+                      <ul
+                        class="nav nav-pills mb-3"
+                        id="pills-tab"
+                        role="tablist"
+                      >
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                          >
+                            first program
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="pills-profile-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                          >
+                            second program
+                          </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link"
+                            id="pills-contact-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact"
+                            aria-selected="false"
+                          >
+                            third program
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="pills-home"
+                          role="tabpanel"
+                          aria-labelledby="pills-home-tab"
+                        >
+                          The portfolio aims to achieve the highest growth rates
+                          while maintaining a balanced risk-adjusted return
+
+                          <!--
+      <div class="row">
+      <div class="col-12 text-center "  >
+      
+<canvas id="income"  ></canvas>
+</div>
+        </div>              
+                                
+        -->
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="mt-4 mb-4">
+                                <div class="aa">
+                                  <div class="chart-container pie-chart">
+                                    <canvas id="program1Chart"></canvas>
+                                  </div>
+                                  <div class="col-12 mt-40">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program1InvestedAmountText"
+                                        ></p>
+                                        <span> invested amount</span>
+                                      </div>
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program1ProfitsText"
+                                        ></p>
+                                        <span>expected returns</span>
+                                      </div>
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program1TotalText"
+                                        ></p>
+                                        <span>total after earnings</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--
+      <div class="col-12 text-center "  >
+      
+<div>
+<canvas id="myChart2" width="750" height="450"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</div>
+      
+-->
+                          </div>
+
+                          <script>
+                            var ctx = document.getElementById("myChart2");
+                            var myChart = new Chart(ctx, {
+                              type: "bar",
+                              data: {
+                                labels: [
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                ],
+                                datasets: [
+                                  {
+                                    data: [
+                                      120000, 99000, 135000, 65000, 92000,
+                                      73000,
+                                    ],
+                                    backgroundColor: [
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                    ],
+                                    borderColor: [
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                    ],
+                                    borderWidth: 1,
+                                  },
+                                ],
+                              },
+                              options: {
+                                scales: {
+                                  y: {
+                                    title: {
+                                      display: true,
+                                      text: " ",
+                                      font: {
+                                        weight: "bold",
+                                      },
+                                    },
+                                    beginAtZero: true,
+                                  },
+                                  x: {
+                                    title: {
+                                      display: true,
+                                      text: " ",
+                                      font: {
+                                        weight: "bold",
+                                      },
+                                    },
+                                  },
+                                },
+                                plugins: {
+                                  legend: {
+                                    display: false,
+                                  },
+                                },
+                              },
+                            });
+                          </script>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-profile"
+                          role="tabpanel"
+                          aria-labelledby="pills-profile-tab"
+                        >
+                          تستهدف المحفظة متوسطة المخاطر تحقيق توازن بين نمو وحفظ
+                          رأس المال
+
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="mt-4 mb-4">
+                                <div class="card-body">
+                                  <div class="chart-container pie-chart">
+                                    <canvas id="program2Chart"></canvas>
+                                  </div>
+                                  <div class="col-12 mt-40">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program2InvestedAmountText"
+                                        ></p>
+                                        <span> invested amount</span>
+                                      </div>
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program2ProfitsText"
+                                        ></p>
+                                        <span>expected returns</span>
+                                      </div>
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program2TotalText"
+                                        ></p>
+                                        <span>total after earnings</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--
+      <div class="col-12 text-center "  >
+      
+<div>
+<canvas id="myChart" width="750" height="450"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</div>
+        
+
+-->
+                          </div>
+
+                          <script>
+                            var ctx = document.getElementById("myChart");
+                            var myChart = new Chart(ctx, {
+                              type: "bar",
+                              data: {
+                                labels: [
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                ],
+                                datasets: [
+                                  {
+                                    data: [
+                                      120000, 99000, 135000, 65000, 92000,
+                                      73000,
+                                    ],
+                                    backgroundColor: [
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                    ],
+                                    borderColor: [
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                    ],
+                                    borderWidth: 1,
+                                  },
+                                ],
+                              },
+                              options: {
+                                scales: {
+                                  y: {
+                                    title: {
+                                      display: true,
+                                      text: " ",
+                                      font: {
+                                        weight: "bold",
+                                      },
+                                    },
+                                    beginAtZero: true,
+                                  },
+                                  x: {
+                                    title: {
+                                      display: true,
+                                      text: " ",
+                                      font: {
+                                        weight: "bold",
+                                      },
+                                    },
+                                  },
+                                },
+                                plugins: {
+                                  legend: {
+                                    display: false,
+                                  },
+                                },
+                              },
+                            });
+                          </script>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-contact"
+                          role="tabpanel"
+                          aria-labelledby="pills-contact-tab"
+                        >
+                          تستهدف المحفظة منخفضة المخاطر حماية رأس المال مع تحقيق
+                          عائد معدل للمخاطر مميز
+
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="mt-4 mb-4">
+                                <div class="aa">
+                                  <div class="chart-container pie-chart">
+                                    <canvas id="program3Chart"></canvas>
+                                  </div>
+                                  <div class="col-12 mt-40">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program3InvestedAmountText"
+                                        ></p>
+                                        <span> invested amount</span>
+                                      </div>
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program3ProfitsText"
+                                        ></p>
+                                        <span>expected returns</span>
+                                      </div>
+                                      <div class="col-4">
+                                        <p
+                                          class="font-bold"
+                                          id="program3TotalText"
+                                        ></p>
+                                        <span>total after earnings</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--
+      <div class="col-12 text-center "  >
+      
+<div>
+<canvas id="myChart1" width="750" height="450"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</div>
+       
+-->
+                          </div>
+
+                          <script>
+                            var ctx = document.getElementById("myChart1");
+                            var myChart = new Chart(ctx, {
+                              type: "bar",
+                              data: {
+                                labels: [
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                  "2020",
+                                ],
+                                datasets: [
+                                  {
+                                    data: [
+                                      120000, 99000, 135000, 65000, 92000,
+                                      73000,
+                                    ],
+                                    backgroundColor: [
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                    ],
+                                    borderColor: [
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                      "#017180",
+                                    ],
+                                    borderWidth: 1,
+                                  },
+                                ],
+                              },
+                              options: {
+                                scales: {
+                                  y: {
+                                    title: {
+                                      display: true,
+                                      text: " ",
+                                      font: {
+                                        weight: "bold",
+                                      },
+                                    },
+                                    beginAtZero: true,
+                                  },
+                                  x: {
+                                    title: {
+                                      display: true,
+                                      text: " ",
+                                      font: {
+                                        weight: "bold",
+                                      },
+                                    },
+                                  },
+                                },
+                                plugins: {
+                                  legend: {
+                                    display: false,
+                                  },
+                                },
+                              },
+                            });
+                          </script>
+                        </div>
+                      </div>
+                      <!-- Nav tabs -->
+
+                      <!-- Tab panes -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        
+
+        <section class="calculator-area-2">
+            <div class="container">
+
+                <div class="section-title">
+       
+                    <h1 class="wow fadeInUp text-white">احسب نتيجة استثمارك اليوم!</h1>
+                </div>
+
+                <div class="calculator-widget-2 mt-50">
+                    <div class="row  gy-lg-0 gy-3">
+                        <div class="col-lg-7">
+                            <div class="single-calculator-widget wow fadeInUp" data-wow-delay="0.1s">
+                                <h4>احسب نتيجة استثمارك اليوم!
+</h4>
+                                <div class="range-label mt-40"></div>
+                                <nav>
+                                    <div class="nav nav-tabs loan-type-select" id="nav-tab" role="tablist">
+                                        <button class="nav-link active" id="yearTab-tab" data-bs-toggle="tab"
+                                            data-bs-target="#yearTab" type="button" role="tab" aria-controls="yearTab"
+                                            aria-selected="false"> البرنامج الاول
+                          
+                                        </button>
+                                        <button class="nav-link " id="monthTab-tab" data-bs-toggle="tab"
+                                            data-bs-target="#monthTab" type="button" role="tab" aria-controls="monthTab"
+                                            aria-selected="false">
+                            البرنامج الثاني </button>
+                                        <button class="nav-link" id="weekTab-tab" data-bs-toggle="tab"
+                                            data-bs-target="#weekTab" type="button" role="tab" aria-controls="weekTab"
+                                            aria-selected="false">البرنامج الثالث
+                            </button>
+                                    </div>
+                                </nav>
+
+                                <div class="range-label">المبلغ الأولي
+</div>
+                                <div class="single-range">
+                                    <div id="RangeSlider"></div>
+                                    <div class="input-group">
+                                        <input class="noTextMerge" type="text" id="SetRange">
+                                        <span class="input-group-text">رس</span>
+                                    </div>
+                                </div>
+                                <div class="range-label">المبلغ الشهري
+</div>
+                                <div class="single-range">
+                                    <div id="RoiRangeSlider"></div>
+                                    <div class="input-group">
+                                        <input type="text" id="SetRoiRange">
+                                        <span class="input-group-text">%</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="single-range">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="yearTab" role="tabpanel"
+                                            aria-labelledby="yearTab">
+                                            <div id="YearRangeSlider"></div>
+                                        </div>
+                                        <div class="tab-pane fade " id="monthTab" role="tabpanel"
+                                            aria-labelledby="monthTab">
+                                            <div id="MonthRangeSlider"></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="weekTab" role="tabpanel"
+                                            aria-labelledby="weekTab">
+                                            <div id="WeekRangeSlider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <input class="noTextMerge" type="text" id="SetMonthRange">
+                                        <span class="input-group-text loanTermIndicator">@example.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 pl-lg-35">
+                            <div class="calculator-result-widget wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="pie-wrapper mt-25" id="loan_graph_circle">
+                                    <div class="label">القيمة الكلية المتوقعه<h2 class="LoanTotalAmount"></h2>
+                                    </div>
+                                    <div class="pie">
+                                        <div class="left-side half-circle"></div>
+                                        <div class="right-side half-circle"></div>
+                                    </div>
+                                    <div class="circle-border"></div>
+                                </div>
+                                <div class="graph-indicator">
+                                    <div><span class="blue-dot"></span> العوائد المتوقعه</div>
+                                    <div><span class="orange-dot"></span> اجمالي المبلغ المستثمر</div>
+                                </div>
+                                <ul class="loan-calculation list-unstyled">
+                                    <li>
+                                        <span class="label">المبلغ المستثمر</span>
+                                        <span class="amount LoanTotalAmount"></span>
+                                    </li>
+                                    <li>
+                                        <span class="label">العائد المتوقع</span>
+                                        <span class="amount" id="InterestPayable"></span>
+                                    </li>
+                                    <li>
+                                        <span class="label">المدة</span>
+                                        <span class="amount LoanTotalDuration"></span>
+                                    </li>
+                                
+                                </ul>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loan section -->
+      <section class="loan-slider-area bg-white pb-130 pt-120">
+        <div class="container">
+          <div class="section-title">
+            <h1 class="wow fadeInUp">identifier center</h1>
+          </div>
+          <div class="loan-slider pt-80">
+            <div class="single-slide">
+              <div class="icon"><img src="img/1/save-money.png" alt="" /></div>
+              <a href="single-page.html">
+                <h4>The ability to invest</h4>
+              </a>
+              <p>
+                Our team maintains capacity, experience and proven track record
+                across various strategic investments with strong execution
+                capabilities.
+              </p>
+            </div>
+            <div class="single-slide">
+              <div class="icon"><img src="img/1/book.png" alt="" /></div>
+              <a href="single-page.html"> <h4>Local knowledge</h4></a>
+
+              <p>
+                Our local knowledge and experience are taken into account in our
+                solutions, which contributes to a positive diffusion of skills
+                and knowledge.
+              </p>
+            </div>
+            <div class="single-slide">
+              <div class="icon"><img src="img/1/increase.png" alt="" /></div>
+              <a href="single-page.html"> <h4>interest alignment</h4></a>
+              <p>
+                Currently our management is the largest shareholder. As such,
+                our interests are "by definition" aligned with our own .
+              </p>
+            </div>
+            <div class="single-slide">
+              <div class="icon"><img src="img/1/reliability.png" alt="" /></div>
+              <a href="single-page.html"> <h4>credibility</h4></a>
+              <p>
+                Our team is highly experienced in the investment community and
+                trusted to manage tens of billions of Saudi riyals in their
+                previous jobs.
+              </p>
+            </div>
+            <div class="single-slide">
+              <div class="icon"><img src="img/1/investment.png" alt="" /></div>
+              <a href="single-page.html"> <h4>Our investments</h4></a>
+              <p>
+                We invest in many vital sectors (energy - clean energy -
+                petroleum - banks - the investment port
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Loan end section -->
+
+      <!-- About Us section -->
+      <!-- About Us section -->
+
+      <!--
+        <section class="coverage-area">
+            <div class="container">
+                <div class="section-title">
+                 
+                    <h1 class="wow fadeInUp">عملائنا</h1>
+                </div>
+                <div class="row mt-50 gy-xl-0 gy-4 text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.1s">
+                            <img src="img/40.png" width="100%" height="75" alt="country">
+                          
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.3s">
+                           <img src="img/41.png" width="100%" height="75" alt="country">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.5s">
+                        <img src="img/42.png" width="100%" height="75" alt="country">
+                        </a>
+                    </div>
+                            <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.1s">
+                            <img src="img/40.png" width="100%" height="75" alt="country">
+                          
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.3s">
+                           <img src="img/41.png" width="100%" height="75" alt="country">
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                        <a href="#" class="country-widget wow fadeInLeft" data-wow-delay="0.5s">
+                        <img src="img/42.png" width="100%" height="75" alt="country">
+                        </a>
+                    </div>
+             
+               </div>
+            </div>
+        </section>
+        -->
+
+      <section class="faq-area pt-125 pb-200">
+        <div class="container">
+          <div class="row pt-30 align-items-end">
+            <div class="col-2"></div>
+            <div class="col-lg-8 col-md-8">
+              <div class="section-title text-start">
+                <h2 class="mb-0 wow fadeInUp text-center">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+
+              <div class="faq-widget">
+                <div class="accordion" id="accordionExample">
+                  <div
+                    class="single-widget-one wow fadeInUp"
+                    data-wow-delay="0.1s"
+                  >
+                    <div class="w-100">
+                      <div class="faq-header" id="headingOne">
+                        <h4
+                          class="mb-0"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          What is the minimum investment amount?
+                          <i class="icon_plus"></i><i class="icon_minus-06"></i>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseOne"
+                        class="collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="faq-body">
+                          <p>
+                            The minimum initial investment amount is 1000 SAR.
+                            After that, the customer can add any additional
+                            amount without a minimum.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="single-widget-one wow fadeInUp"
+                    data-wow-delay="0.3s"
+                  >
+                    <div class="w-100">
+                      <div class="faq-header" id="headingTwo">
+                        <h4
+                          class="mb-0 collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseTwo"
+                        >
+                          What are the types of investments that we offer?<i
+                            class="icon_plus"
+                          ></i
+                          ><i class="icon_minus-06"></i>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="faq-body">
+                          <p>
+                            Values of various types invest in various assets
+                            locally and globally, such as Saudi and
+                            international stocks, real estate, and sukuk. We
+                            believe in the effectiveness of long-term investment
+                            at low costs, and therefore we rely mainly on
+                            passive investment tools such as Exchange Traded
+                            Funds (ETFs), as scientific studies have found their
+                            effectiveness and superiority over active investment
+                            over time.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="single-widget-one wow fadeInUp"
+                    data-wow-delay="0.5s"
+                  >
+                    <div class="w-100">
+                      <div class="faq-header" id="headingThree">
+                        <h4
+                          class="mb-0 collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="true"
+                          aria-controls="collapseThree"
+                        >
+                          Are the investments compatible with Sharia
+                          provisions?<i class="icon_plus"></i
+                          ><i class="icon_minus-06"></i>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="faq-body">
+                          <p>
+                            Yes, all of our investment products have been
+                            reviewed and approved by the Sharia Committee.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="single-widget-one wow fadeInUp"
+                    data-wow-delay="0.7s"
+                  >
+                    <div class="w-100">
+                      <div class="faq-header" id="headingFour">
+                        <h4
+                          class="mb-0 collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="true"
+                          aria-controls="collapseFour"
+                        >
+                          What are the fees charged for the service?<i
+                            class="icon_plus"
+                          ></i
+                          ><i class="icon_minus-06"></i>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseFour"
+                        class="collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="faq-body">
+                          The financial fee is 1% of the funds managed for the
+                          client in the platform on an annual basis and is
+                          deducted on a monthly basis.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="single-widget-one wow fadeInUp"
+                    data-wow-delay="0.9s"
+                  >
+                    <div class="w-100">
+                      <div class="faq-header" id="headingFive">
+                        <h4
+                          class="mb-0 collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="true"
+                          aria-controls="collapseFive"
+                        >
+                          Can I deposit and withdraw easily?<i
+                            class="icon_plus"
+                          ></i
+                          ><i class="icon_minus-06"></i>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseFive"
+                        class="collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="faq-body">
+                          <p>
+                            Yes, through the platform, you can deposit and
+                            withdraw investments at any time. Knowing that the
+                            process may take from 2 to 5 working days.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-touch-area-2">
+        <div class="container">
+          <div class="row align-items-center gy-md-0 gy-4">
+            <div class="col-md-6">
+              <h1>Subscribe us</h1>
+              <p>
+                Now contact us and invest your money in successful projects and
+                earn extra income
+              </p>
+              <div class="consult-num">
+                <div>
+                  <h1>1M+</h1>
+                  <p>Investor</p>
+                </div>
+                <div>
+                  <h1>40+</h1>
+                  <p>project</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="touch-form">
+                <h3>Contact us</h3>
+                <form id="MialForm" action="http://localhost:8000/api/sendmail">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter Name"
+                    required
+                  />
+                  <input type="hidden" name="title" id="title" />
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="chkPassport">
+                        <input type="checkbox" id="chkPassport" />
+                        Investor
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="chkPassport">
+                        <input type="checkbox" id="chkPassport" />
+                        business pioneer
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-12" id="dvPassport" style="display: none">
+                    <div class="row">
+                      <div class="form-group">
+                        <label> the amount </label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter a phone number"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter the email"
+                    required
+                  />
+                  <textarea
+                    class="form-control"
+                    name="content"
+                    id="content"
+                    placeholder="ادخل نص الرسالة"
+                  ></textarea>
+                  <button type="submit" class="theme-btn mt-10">send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer
+      class="footer footer-2 pt-lg-130 pt-110 pb-100 pb-lg-125"
+      style="background-image: url(img/footer/footer-bg-2.png)"
+    >
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 text-left text-sm-start">
+              <div class="footer-widget mb-30 wow fadeInLeft">
+                <h4 class="mb-20 text-left">About us</h4>
+                <div class="footer-text mb-20">
+                  <p>
+                    We invest in startups and companies with returns in the
+                    region and contribute to the development their business from
+                    the stage of incorporation to the stage of growth and
+                    expansion. We have been making the difference since 2017 and
+                    we are still... striving to reach the satisfaction of our
+                    partners in success
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-sm-6 text-center text-sm-start offset-lg-1"
+            >
+              <div
+                class="footer-widget mb-30 wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <div class="f-widget-title">
+                  <h5>contact numbers</h5>
+                </div>
+                <div class="footer-link">
+                  <ul>
+                    <li><a href="#"> 05154521452</a></li>
+                    <!-- <li><a href="#"> info@example.com</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 text-center text-sm-start">
+              <div
+                class="footer-widget mb-30 wow fadeInUp"
+                data-wow-delay="0.3s"
+              >
+                <div class="f-widget-title">
+                  <h5>Pages that interest you</h5>
+                </div>
+                <div class="footer-link">
+                  <ul>
+                    <li><a href="#">Usage policy</a></li>
+                    <li><a href="#"> privacy policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright pt-45">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 offset-xl-4">
+              <div class="row align-items-center gy-lg-0 gy-3 gx-0">
+                <div class="col-md-2 text-md-start text-center"></div>
+                <div class="col-md-6">
+                  <div class="line"></div>
+                </div>
+                <div class="col-md-4">
+                  <div class="social-button text-center">
+                    <!-- <a class="ms-0" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a> -->
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
+                    <a class="me-0" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="copyright-text mt-4 text-md-start text-center">
+                  <p>
+                    <br class="d-sm-none" />
+                    All rights reserved to Nine Tenths Company
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/wNumb.js"></script>
+    <script type="text/javascript" src="js/flatpickr.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/intlTelInput-jquery.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- Language Translate JS -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/lang.js"></script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <script>
+      var barData = {
+        labels: [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "20301",
+        ],
+        datasets: [
+          {
+            fillColor: "#48A497",
+            strokeColor: "#48A4D1",
+            data: [456, 479, 324, 569, 702, 600, 569, 702, 600, 569, 702, 600],
+          },
+        ],
+      };
+
+      // get bar chart canvas
+      var income = document.getElementById("income").getContext("2d");
+
+      // draw bar chart
+      new Chart(income).Bar(barData);
+    </script>
+    <script>
+      var barData = {
+        labels: [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "20301",
+        ],
+        datasets: [
+          {
+            fillColor: "#48A497",
+            strokeColor: "#48A4D1",
+            data: [456, 479, 324, 569, 702, 600, 569, 702, 600, 569, 702, 600],
+          },
+        ],
+      };
+
+      // get bar chart canvas
+      var mychar1 = document.getElementById("mychar").getContext("2d");
+
+      // draw bar charthh
+      new Chart(mychar1).Bar(barData);
+    </script>
+    <script>
+      /**
+       * Sniffs for Older Edge or IE,
+       * more info here:
+       * https://stackoverflow.com/q/31721250/3528132
+       */
+      function isOlderEdgeOrIE() {
+        return (
+          window.navigator.userAgent.indexOf("MSIE ") > -1 ||
+          !!navigator.userAgent.match(/Trident.*rv\:11\./) ||
+          window.navigator.userAgent.indexOf("Edge") > -1
+        );
+      }
+
+      function valueTotalRatio(value, min, max) {
+        return ((value - min) / (max - min)).toFixed(2);
+      }
+
+      function getLinearGradientCSS(ratio, leftColor, rightColor) {
+        return [
+          "-webkit-gradient(",
+          "linear, ",
+          "left top, ",
+          "right top, ",
+          "color-stop(" + ratio + ", " + leftColor + "), ",
+          "color-stop(" + ratio + ", " + rightColor + ")",
+          ")",
+        ].join("");
+      }
+
+      function updateRangeEl(rangeEl) {
+        var ratio = valueTotalRatio(rangeEl.value, rangeEl.min, rangeEl.max);
+
+        rangeEl.style.backgroundImage = getLinearGradientCSS(
+          ratio,
+          "#919e4b",
+          "#c5c5c5"
+        );
+      }
+
+      function initRangeEl() {
+        var rangeEl = document.querySelector("input[type=range]");
+        var textEl = document.querySelector("input[type=text]");
+
+        /**
+         * IE/Older Edge FIX
+         * On IE/Older Edge the height of the <input type="range" />
+         * is the whole element as oposed to Chrome/Moz
+         * where the height is applied to the track.
+         *
+         */
+        if (isOlderEdgeOrIE()) {
+          rangeEl.style.height = "20px";
+          // IE 11/10 fires change instead of input
+          // https://stackoverflow.com/a/50887531/3528132
+          rangeEl.addEventListener("change", function (e) {
+            textEl.value = e.target.value;
+          });
+          rangeEl.addEventListener("input", function (e) {
+            textEl.value = e.target.value;
+          });
+        } else {
+          updateRangeEl(rangeEl);
+          rangeEl.addEventListener("input", function (e) {
+            updateRangeEl(e.target);
+            textEl.value = e.target.value;
+          });
+        }
+      }
+
+      initRangeEl();
+    </script>
+
+    <script>
+      $(function () {
+        $("#chkPassport").click(function () {
+          if ($(this).is(":checked")) {
+            $("#dvPassport").show();
+            $("#AddPassport").hide();
+          } else {
+            $("#dvPassport").hide();
+            $("#AddPassport").show();
+          }
+        });
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let investedAmount = 100000;
+        program1(investedAmount);
+        program2(investedAmount);
+        program3(investedAmount);
+        $("#investedAmount").on("change", function () {
+          let investedAmount = parseInt($(this).val());
+          program1(investedAmount);
+          program2(investedAmount);
+          program3(investedAmount);
+        });
+        function program1(investedAmount) {
+          let year = new Date().getFullYear();
+          let labels = [];
+          let amountsAfterProfit = [];
+          let colors = [];
+          let profits =
+            parseInt(investedAmount * 2.5913876441807604) - investedAmount;
+          let averageAnnualProfit = profits / 5;
+          let yearAmount = investedAmount + averageAnnualProfit;
+          let TotalamountsAfterProfit = investedAmount + profits;
+          for (let i = 1; i < 6; i++) {
+            let total = yearAmount;
+            labels.push(year);
+            amountsAfterProfit.push(total);
+            colors.push("#017180");
+            year++;
+            yearAmount = yearAmount + averageAnnualProfit;
+          }
+
+          let chart_data = {
+            labels: labels,
+            datasets: [
+              {
+                label: "توقعات الأرباح",
+                backgroundColor: colors,
+                color: "#fff",
+                data: amountsAfterProfit,
+              },
+            ],
+          };
+
+          let options = {
+            responsive: true,
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    min: 0,
+                  },
+                },
+              ],
+            },
+          };
+          let group_chart3 = $("#program1Chart");
+
+          let graph3 = new Chart(group_chart3, {
+            type: "bar",
+            data: chart_data,
+            options: options,
+          });
+          $("#program1InvestedAmountText").text(
+            `${addCommas(investedAmount)} رس`
+          );
+          $("#program1ProfitsText").text(`${addCommas(profits)} رس`);
+          $("#program1TotalText").text(
+            `${addCommas(TotalamountsAfterProfit)} رس`
+          );
+        }
+        function program2(investedAmount) {
+          let year = new Date().getFullYear();
+          let labels = [];
+          let amountsAfterProfit = [];
+          let colors = [];
+          let profits =
+            parseInt(investedAmount * 3.1737783457256232) - investedAmount;
+          let averageAnnualProfit = profits / 5;
+          let yearAmount = investedAmount + averageAnnualProfit;
+          let TotalamountsAfterProfit = investedAmount + profits;
+          for (let i = 1; i < 6; i++) {
+            let total = yearAmount;
+            labels.push(year);
+            amountsAfterProfit.push(total);
+            colors.push("#017180");
+            year++;
+            yearAmount = yearAmount + averageAnnualProfit;
+          }
+
+          let chart_data = {
+            labels: labels,
+            datasets: [
+              {
+                label: "توقعات الأرباح",
+                backgroundColor: colors,
+                color: "#fff",
+                data: amountsAfterProfit,
+              },
+            ],
+          };
+
+          let options = {
+            responsive: true,
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    min: 0,
+                  },
+                },
+              ],
+            },
+          };
+          let group_chart3 = $("#program2Chart");
+
+          let graph3 = new Chart(group_chart3, {
+            type: "bar",
+            data: chart_data,
+            options: options,
+          });
+          $("#program2InvestedAmountText").text(
+            `${addCommas(investedAmount)} رس`
+          );
+          $("#program2ProfitsText").text(`${addCommas(profits)} رس`);
+          $("#program2TotalText").text(
+            `${addCommas(TotalamountsAfterProfit)} رس`
+          );
+        }
+        function program3(investedAmount) {
+          let year = new Date().getFullYear();
+          let labels = [];
+          let amountsAfterProfit = [];
+          let colors = [];
+          let profits =
+            parseInt(investedAmount * 4.021955403166776) - investedAmount;
+          let averageAnnualProfit = profits / 5;
+          let yearAmount = investedAmount + averageAnnualProfit;
+          let TotalamountsAfterProfit = investedAmount + profits;
+          for (let i = 1; i < 6; i++) {
+            let total = yearAmount;
+            labels.push(year);
+            amountsAfterProfit.push(total);
+            colors.push("#017180");
+            year++;
+            yearAmount = yearAmount + averageAnnualProfit;
+          }
+
+          let chart_data = {
+            labels: labels,
+            datasets: [
+              {
+                label: "توقعات الأرباح",
+                backgroundColor: colors,
+                color: "#fff",
+                data: amountsAfterProfit,
+              },
+            ],
+          };
+
+          let options = {
+            responsive: true,
+            scales: {
+              yAxes: [
+                {
+                  ticks: {
+                    min: 0,
+                  },
+                },
+              ],
+            },
+          };
+          let group_chart3 = $("#program3Chart");
+
+          let graph3 = new Chart(group_chart3, {
+            type: "bar",
+            data: chart_data,
+            options: options,
+          });
+          $("#program3InvestedAmountText").text(
+            `${addCommas(investedAmount)} رس`
+          );
+          $("#program3ProfitsText").text(`${addCommas(profits)} رس`);
+          $("#program3TotalText").text(
+            `${addCommas(TotalamountsAfterProfit)} رس`
+          );
+        }
+        function addCommas(nStr) {
+          nStr += "";
+          x = nStr.split(".");
+          x1 = x[0];
+          x2 = x.length > 1 ? "." + x[1] : "";
+          var rgx = /(\d+)(\d{3})/;
+          while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, "$1" + "," + "$2");
+          }
+          return x1 + x2;
+        }
+      });
+    </script>
+
+    <script>
+      $("#MialForm").submit(function (event) {
+        event.preventDefault(); // cancel default behavior
+        let email = document.getElementById("email").value;
+        let content = document.getElementById("content").value;
+        let name = document.getElementById("name").value;
+        let title = document.getElementById("title").value;
+        let phone = document.getElementById("phone").value;
+        console.log(email, name, title, phone, content);
+        var requestOptions = {
+          method: "GET",
+          redirect: "follow",
+        };
+        fetch(
+          `http://localhost:8000/api/sendmail?email=${email}&title=${title}&phone=${phone}&content=${content}&name=${name}`,
+          requestOptions
+        )
+          .then((response) => response.text())
+          .then((result) => {
+            console.log(result);
+            Swal.fire({
+              title: "تم الارسال بنجاح",
+              icon: "success",
+            });
+          })
+          .catch((error) => {
+            Swal.fire({
+              title: "حدث خطاء اثناء المعالجه يرجي اعاده المحاوله",
+              icon: "error",
+            });
+            console.log("error", error);
+          });
+      });
+    </script>
+  </body>
+</html>
